@@ -1,6 +1,6 @@
 from openpyxl import load_workbook #used to import the Excel Data
 from datetime import datetime #used to work with date times
-#used for merge tags. If getting error, uninstall and install mailmerge-docx
+#used for merge tags. If there is an error, uninstall and install docx-mailmerge
 from mailmerge import MailMerge
 
 # Setting up Excel sheet variables
@@ -64,4 +64,4 @@ for rep in unique_rep_list:
     # Merging the name and formatting totals
     word_doc.merge(Name = rep, Total = "{:,.2f}".format(total))
     word_doc.merge_rows('Date', sales_history_list) #merge which creates table
-    word_doc.write(f'Invoice for {rep}.docx') #Creates Word doc and names it
+    word_doc.write(f'Sales Order for {rep}.docx') #Creates Word doc and names it
