@@ -206,3 +206,31 @@ for rep in unique_rep_list:
     word_doc.write(f'Invoice for {rep}.docx') #merge which creates Word doc and name it
             
 ```
+
+## References for word doc
+
+Reference: <br>
+https://pbpython.com/python-word-template.html
+
+
+MailMerge Example: <br>
+https://answers.microsoft.com/en-us/msoffice/forum/all/mail-merge-is-an-if-then-symbol-possible/0d19a5da-856f-4466-90a6-f7cf6a668339
+
+Marking Merge Fields:
+- Key command
+> On windows: Ctrl-F9 <br>
+>Mac: Cmd-F9 on a Mac <br>
+>Once this is done, input MERGEFIELD, as such:
+>`{MERGEFIELD Name}`
+
+- Using Word.
+>Under <b>Insert</b>, go to <b>Field</b> under the <b>Quick Parts</b> button
+![image.png](attachment:image.png)
+
+> <br>
+>In the <b>Field window</b>, select <b>Merge Field</b> in the field names and input the name of the field in the <b>Field Name</b> text box
+
+![Merge%20field%20image.png](attachment:Merge%20field%20image.png)
+
+>Once down, it will look like this:
+![NewMergeField.png](attachment:NewMergeField.png)
