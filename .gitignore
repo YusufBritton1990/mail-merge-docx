@@ -4,3 +4,5 @@ Sales *.docx
 Final Code - Breakdown.ipynb
 Test.ipynb
 Testing
+.ipynb_checkpoints
+__pycache__
